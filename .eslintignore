@@ -1,0 +1,8 @@
+.eslintrc.js
+node_modules
+dist
+lib
+es
+.DS_Store
+*.local
+scripts

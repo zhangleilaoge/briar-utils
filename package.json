@@ -1,0 +1,41 @@
+{
+  "name": "briar-utils",
+  "version": "0.0.1",
+  "description": "briar-utils仓库",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "publish": "lerna publish",
+    "dev": "lerna run dev --parallel",
+    "build": "lerna run build",
+    "postinstall": "husky install",
+    "lint": "eslint",
+    "lint-staged": "lint-staged"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "pnpm": ">=8.15.9"
+  },
+  "author": "zhangleilaoge",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "concurrently": "^9.0.1",
+    "eslint": "8.42.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "husky": "^9.1.5",
+    "lerna": "^4.0.0",
+    "lint-staged": "^15.2.9",
+    "rimraf": "^6.0.1",
+    "typescript": "^4.5.2",
+    "typescript-eslint": "^8.3.0"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,tsx,ts,scss}": [
+      "eslint"
+    ]
+  }
+}
